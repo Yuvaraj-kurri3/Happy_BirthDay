@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HAPPY BIRTHDAY</title>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Dancing+Script:wght@400;600&display=swap');
+    .hbd {
+    background: linear-gradient(to right, #36d1dc, #5b86e5);
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+    height: max-content;
+    border-radius: 10px;
+}
+
+#happy-bdy-b, #b {
+    font-family: sans-serif;
+}
+
+.quote-img {
+    border: 3px solid rgb(55, 87, 126);
+    margin-top: 100px;
+    width: 450px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 2%;
+    animation: mytrans .2s infinite;
+}
+@keyframes mytrans {
+    0% {
+        border-color: #ee0979;
+    }
+    50% {
+        border-color: #7f00ff;
+    }
+    100% {
+        border-color: #00dbde;
+    }
+    
+}
+#qoute {
+    font-size: 13px;
+    font-style: italic;
+    padding: 10px;
+    text-align: center;
+    color:chocolate;
+    font-family: 'Poppins', sans-serif;
+    font-weight:bold;
+
+}
+
+#img1 {
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+}
+
+.img {
+    /* border: 2px solid red; */
+    width: 250px;
+    height: 250px;
+    margin-left: 110px;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+.div-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+#btn {
+    border: none;
+    text-decoration: none;
+    width: 80px;
+    height: 40px;
+    font-size: 18px;
+    padding: 8px;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+    animation: myborder 2s infinite;
+}
+
+@keyframes myborder {
+
+0% {
+    border-color: #ee0979;
+}
+32% {
+    border-color: #7f00ff;
+}
+64%{
+    border: 1.5 px solid rgb(0, 208, 255);
+}
+80%{
+    border: 1.5px solid #ee0979;
+}
+100% {
+    border-color: #00dbde;
+}
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 14px;
+    color: black;
+}
+button:hover{
+    color: blue;
+}
+/* Responsive styles for tablets */
+@media (max-width: 768px) {
+    .hbd {
+        padding: 10px;
+    }
+
+    .quote-img {
+        width: 350px;
+        height: 400px;
+        margin-top: 50px;
+    }
+
+    #qoute {
+        font-size: 15px;
+    }
+
+    #img1 {
+        width: 220px;
+        height: 220px;
+    }
+
+    .img {
+        width: 150px;
+        height: 150px;
+        margin-top: 30px;
+        margin-left: 65px;
+    }
+
+    .div-buttons {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #btn {
+        width: 90px;
+        height: 35px;
+        font-size: 15px;
+       padding: 5px;
+       font-weight: bold;
+
+    }
+}
+
+         @media(max-width: 480px) {
+            /* Add CSS styles for even smaller screens here */
+            .quote-img{
+                        border: 2px solid pink;
+                        margin-top: 100px;
+                        width: 300px;
+                        height: 350px;
+                        
+                 }
+            .img{
+            /* border: 2px solid red; */
+            width: 230px;
+            height: 230px;
+            margin-left: 60px;
+            margin-top:10px;
+            margin-right: 40px;
+             }
+        #qoute{
+            font-size: 14px;
+            font-style: italic;
+        }
+              
+       .div-buttons{
+            display: flex;
+            flex-direction: row;
+            margin-left: 10px;
+            margin-top: 20px;
+            gap: 10px;
+        }
+        #btn {
+            width: 80px;
+            height: 40px;
+            font-size: 20px;
+            padding: 3px;
+            font-weight: bold;
+
+        }
+        #img1{
+            width: 190px;
+            height: 190px;
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="hbd">
+        <h1 id="Happy-bdy-b">Happy Birth Day</h1>
+        <p id="B">66726586657873</p>
+    </div>
+    <div class="quote-img">
+        <p id="qoute">"Your life is a masterpiece of code; may this year add some extraordinary features and zero crashes!"</p>
+        <div class="img">
+            <img src="https://res.cloudinary.com/dtozixle0/image/upload/v1734976618/b3_lxfolv.jpg" alt="" id="img1">
+        </div>
+        
+    </div>
+     <div class="div-buttons">
+        <a href="./slide2.html"><button id="btn" style="font-size: 17px;">Previous</button></a>
+        <a href="./slide4.html"><button id="btn" style="font-size: 17px;" class="btnn">Next</button></a>
+     </div>
+    
+</body>
+</html>
