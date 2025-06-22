@@ -236,15 +236,6 @@ button:hover{
         max-width: 300px;
     ">
         <h3 style="margin: 0; color: #e100ff;">I am still Waiting for you!</h3>
-        <button onclick="closePopup()" style="
-            margin-top: 20px;
-            padding: 8px 16px;
-            background: #7f00ff;
-            border: none;
-            color: white;
-            border-radius: 5px;
-            cursor: pointer;
-        ">OK</button>
     </div>
 </div>
 
@@ -283,9 +274,9 @@ setTimeout(() => {
     document.getElementById('customPopup').style.display = 'flex';
 }, 1000);
 
-function closePopup() {
+setTimeout(() => {
     document.getElementById('customPopup').style.display = 'none';
-}
+}, 3200);
 
     </script>
 </body>
